@@ -1,0 +1,19 @@
+# Demo config for books.toscrape.com, a sandbox site built for scraping practice.
+name: books_demo
+start_url: "https://books.toscrape.com/catalogue/page-{page}.html"
+first_page: 1
+max_pages: 3
+item_selector: "article.product_pod"
+fields:
+  title:
+    selector: "h3 a"
+    attr: "title"
+  price:
+    selector: ".price_color"
+  link:
+    selector: "h3 a"
+    attr: "href"
+    absolute: true
+dedupe_on: ["title"]
+delay_seconds: 1.0
+output: "output/books_demo.csv"
