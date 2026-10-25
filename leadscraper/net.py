@@ -7,7 +7,7 @@ from urllib.robotparser import RobotFileParser
 
 import requests
 
-USER_AGENT = "leadscraper/0.1 (+https://github.com/your-username/directory-lead-scraper)"
+USER_AGENT = "leadscraper/0.1 (+https://github.com/erdincgurel268/directory-lead-scraper)"
 HEADERS = {"User-Agent": USER_AGENT}
 
 _robots_cache: Dict[str, RobotFileParser] = {}
