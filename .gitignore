@@ -1,0 +1,9 @@
+venv/
+.venv/
+--pycache--/
+*.pyc
+*.csv
+*.xlsx
+*.done
+output/
+.env
